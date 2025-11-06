@@ -87,11 +87,21 @@
 #         continue
 #     print(i)
 
-numbers = [1, 3, 5, 8, 7, 9, 10]
-for num in numbers:
-    print(num)
-    if num == 7:
-        print('Ура, мы нашли число 7')
-        break
-else:
-    print('К сожалению, числа 7 там нет')
+# numbers = [1, 3, 5, 8, 7, 9, 10]
+# for num in numbers:
+#     print(num)
+#     if num == 7:
+#         print('Ура, мы нашли число 7')
+#         break
+# else:
+#     print('К сожалению, числа 7 там нет')
+
+#№5 Вывести сумму чисел от 1 до заданного числа
+# x = int(input('Enter natural number: '))
+# summa = 0
+# if x > 0:
+#     for i in range(1, x + 1):
+#         summa += i
+#     print('Sum =', summa)
+# else:
+#     print('Invalid input')
