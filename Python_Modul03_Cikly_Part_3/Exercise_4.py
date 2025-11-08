@@ -15,12 +15,12 @@ if x != num and x != 0:
             x = int(input('Guess the number: '))
         counter += 1
 elif x == num:
-    print('You guessed the number')
+    print('You guessed the number.')
 elif x == 0:
     print('You have completed the game.\nThe hidden number:', num)
     counter = 0
 if x != 0 and counter > 1:
-    print('You guessed the number')
+    print('You guessed the number.')
 elif x == 0 and counter > 1:
     print('You have completed the game.\nThe hidden number:', num)
     counter -= 1
