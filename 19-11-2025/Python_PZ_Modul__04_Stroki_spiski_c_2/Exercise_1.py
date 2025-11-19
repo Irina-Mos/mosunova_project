@@ -1,5 +1,5 @@
 text = input('Enter the text : ')
-# hi! nice to meet you! my name is John Smith. i am 19 and a student in college. i go to college in New York. my favorite courses are Geometry, French, and History. english is my hardest course. my professors are very friendly and smart. it’s my second year in college now. i love it!
+# Text: hi! nice to meet you! my name is John Smith. i am 19 and a student in college. i go to college in New York. my favorite courses are Geometry, French, and History. english is my hardest course. my professors are very friendly and smart. it’s my second year in college now. i love it!
 # 1
 new_text = text[0].upper()
 new_text += text[1]
