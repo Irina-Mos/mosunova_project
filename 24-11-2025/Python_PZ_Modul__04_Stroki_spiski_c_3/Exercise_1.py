@@ -16,7 +16,7 @@ for i in range(0, num_of_num):
         sum_even += num
     else:
         sum_odd += num
-    if i % 3 == 0 and i != 0:
+    if i % 3 == 0:
         tot_ind_mult_3 *=num
     if num > 0:
         pos_list.append(i)
