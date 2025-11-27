@@ -1,6 +1,6 @@
 import random
-def operations():
-    num_of_num = random.randint(1, 10)
+def operations(num_of_num):
+    # num_of_num = random.randint(1, 10)
     num_list = []
     count_neg = 0
     count_pos = 0
@@ -24,4 +24,6 @@ def operations():
     print('The number of positive numbers:', count_pos)
     print('The number of negative numbers:', count_neg)
     print('The number of zeros:', count_zero)
-operations()
+
+
+operations(random.randint(1, 10))

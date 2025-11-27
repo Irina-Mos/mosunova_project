@@ -25,6 +25,8 @@ def operations(expression):
         print('The product of numbers:', int(num_1) * int(num_2))
     elif operation == '/':
         print('The quotient of a numbers:', int(num_1) / int(num_2))
+
+
 operations('23+12')
 operations('23-12')
 operations('40*4')
