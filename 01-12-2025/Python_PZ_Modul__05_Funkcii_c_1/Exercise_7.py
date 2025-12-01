@@ -1,0 +1,16 @@
+def happy_num(x):
+    if x // 100000 != 0 and x // 100000 < 10:
+        units = x % 10
+        tens = x % 100 // 10
+        hundreds = x % 1000 // 100
+        thousands = x % 10000 // 1000
+        tens_of_thousands = x % 100000 // 10000
+        hundreds_of_thousands = x // 100000
+        if (hundreds_of_thousands + tens_of_thousands + thousands) == (hundreds + tens + units):
+            print('A lucky number')
+        else:
+            print('Not a lucky number')
+    else:
+        print('Invalid input')
+
+happy_num(123321)
