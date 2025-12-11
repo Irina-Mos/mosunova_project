@@ -7,30 +7,30 @@ class Book:
         self.author = ""
         self.price = 0.0
 
-    def enter_book (self):
-        self.title = input("Enter the title of the book: ")
-        self.year = int(input("Enter the year of publication: "))
-        self.publisher = input("Enter the publisher of the book: ")
-        self.genre = input("Enter the genre of the book: ")
-        self.author = input("Enter the author of the book: ")
-        self.price = float(input("Enter the price of the book: "))
+    def enter_book (self, title: str, year: int, publisher: str, genre: str, author: str, price: float):
+        self.title = title
+        self.year = year
+        self.publisher = publisher
+        self.genre = genre
+        self.author = author
+        self.price = price
 
-    def enter_title(self, title):
+    def enter_title(self, title: str):
         self.title = title
 
-    def enter_year(self, year):
+    def enter_year(self, year: int):
         self.year = year
 
-    def enter_publisher(self, publisher):
+    def enter_publisher(self, publisher: str):
         self.publisher = publisher
 
-    def set_genre(self, genre):
+    def set_genre(self, genre: str):
         self.genre = genre
 
-    def enter_author(self, author):
+    def enter_author(self, author: str):
         self.author = author
 
-    def enter_price(self, price):
+    def enter_price(self, price: float):
         self.price = price
 
     def get_book_info(self):

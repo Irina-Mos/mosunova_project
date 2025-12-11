@@ -6,26 +6,26 @@ class Stadium:
         self.city = ""
         self.capacity = ""
 
-    def enter_stadium (self):
-        self.name = input("Enter the stadium name: ")
-        self.open_date = input("Enter the opening date: ")
-        self.country = input("Enter the country: ")
-        self.city = float(input("Enter the city: "))
-        self.capacity = input("Enter the capacity: ")
+    def enter_stadium (self, name: str, open_date: str, country: str, city: str, capacity: str):
+        self.name = name
+        self.open_date = open_date
+        self.country = country
+        self.city = city
+        self.capacity = capacity
 
-    def enter_name(self, name):
+    def enter_name(self, name: str):
         self.name = name
 
-    def enter_open_date(self, open_date):
+    def enter_open_date(self, open_date: str):
         self.open_date = open_date
 
-    def enter_country(self, country):
+    def enter_country(self, country: str):
         self.country = country
 
-    def set_city(self, city):
+    def set_city(self, city: str):
         self.city = city
 
-    def enter_capacity(self, capacity):
+    def enter_capacity(self, capacity: str):
         self.capacity = capacity
 
 
