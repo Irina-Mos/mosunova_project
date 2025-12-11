@@ -7,30 +7,30 @@ class Automobile:
         self.car_color = ""
         self.price = 0.0
 
-    def enter_car (self):
-        self.model = input("Enter the model: ")
-        self.year_of_manufacture = int(input("Enter the year of manufacture: "))
-        self.manufacturer = input("Enter the manufacturer: ")
-        self.engine_capacity = float(input("Enter the engine's capacity: "))
-        self.car_color = input("Enter the car color: ")
-        self.price = float(input("Enter the price: "))
+    def enter_car (self, model: str, year_of_manufacture: int, manufacturer: str, engine_capacity: float, car_color: str, price: float):
+        self.model = model
+        self.year_of_manufacture = year_of_manufacture
+        self.manufacturer = manufacturer
+        self.engine_capacity = engine_capacity
+        self.car_color = car_color
+        self.price = price
 
-    def enter_model(self, model):
+    def enter_model(self, model: str):
         self.model = model
 
-    def enter_year(self, year_of_manufacture):
+    def enter_year(self, year_of_manufacture: int):
         self.year_of_manufacture = year_of_manufacture
 
-    def enter_manufacturer(self, manufacturer):
+    def enter_manufacturer(self, manufacturer: str):
         self.manufacturer = manufacturer
 
-    def set_engine_capacity(self, engine_capacity):
+    def set_engine_capacity(self, engine_capacity: float):
         self.engine_capacity = engine_capacity
 
-    def enter_color(self, car_color):
+    def enter_color(self, car_color: str):
         self.car_color = car_color
 
-    def enter_price(self, price):
+    def enter_price(self, price: float):
         self.price = price
 
     def get_car_info(self):
@@ -58,17 +58,3 @@ class Automobile:
 
     def get_price(self):
         return self.price
-
-hyundai_solaris = Automobile()
-
-hyundai_solaris.enter_car()
-hyundai_solaris.get_car_info()
-print(hyundai_solaris.get_model())
-print(hyundai_solaris.get_year_of_manufacture())
-print(hyundai_solaris.get_manufacturer())
-print(hyundai_solaris.get_engine_capacity())
-print(hyundai_solaris.get_car_color())
-print(hyundai_solaris.get_price())
-
-
-
